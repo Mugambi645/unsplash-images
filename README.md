@@ -12,9 +12,8 @@
 - Create an .env file in the root directory
 - Add Api key REACT_APP_API_KEY="Your-api-key"
 - Note the Api key must start with <REACT-APP> keyword
-## Firebase
-  - Head over to firebase docs to learn how to configure it in your app
-  - [Firebase Docs](https://https://firebase.google.com/docs)
+## Deployment
+- Follow the netfly guidelines here <https://docs.netlify.com/>
 ## Development
 Want to contribute? Great!
 
