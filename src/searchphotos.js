@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import Unsplash, {toJson} from "unsplash-js";
 const unsplash = new Unsplash({
-    accessKey: "",
+    accessKey: process.env.REACT_APP_API_KEY,
 })
 export default function SearchPhotos(){
     const [query, setQuery] = useState(" ");
     const [pics, setPicks] = useState([]);
     console.log(query);
-    const searchphotos = async(e) => {
+    const SearchPhotos = async(e) => {
         e.preventDefault();
         unsplash.search
         .photos(query, 1, 20)
@@ -19,7 +19,7 @@ export default function SearchPhotos(){
     }
     return (
         <>
-        <form className="form" onSubmit={searchPhotos}>
+        <form className="form" onSubmit={SearchPhotos}>
             <label className="label" htmlFor="query">
                 {" "}
             </label>
