@@ -5,14 +5,15 @@ const unsplash = new Unsplash({
 })
 export default function SearchPhotos(){
     const [query, setQuery] = useState(" ");
+    const [pics, setPicks] = useState([]);
     console.log(query);
     const searchphotos = async(e) => {
         e.preventDefault();
         unsplash.search
-        .photos(query)
+        .photos(query, 1, 20)
         .then(toJson)
         .then((json) => {
-            console.log(json);
+            setPicks(json.results);
         })
         console.log("Submitting the form");
     }
@@ -32,7 +33,21 @@ export default function SearchPhotos(){
                 Search
             </button>
         </form>
-        
+        <div className="card-list">
+        {
+          pics.map((pic) => 
+            <div className="card" key={pic.id}>
+              <img
+                className="card--image"
+                alt={pic.alt_description}
+                src={pic.urls.full}
+                width="50%"
+                height="50%"
+              ></img>
+            </div>)
+        }
+      </div>
+
         </>
     )
 }
