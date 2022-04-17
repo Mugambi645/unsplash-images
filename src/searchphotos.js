@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Unsplash, {toJson} from "unsplash-js";
 import {FaImage} from "react-icons/fa"
 const unsplash = new Unsplash({
-    accessKey: process.env.REACT_APP_API_KEY,
+    accessKey: "FRJR5twETbLCwJyDWg4J_DtLYQJAPUvr1wXuFXeXUAw",
 })
 export default function SearchPhotos(){
     const [query, setQuery] = useState(" ");
