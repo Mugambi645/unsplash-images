@@ -17,6 +17,7 @@
 .title {
   font-size: 4.4rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
 }
 
 .form {
@@ -77,9 +78,4 @@
     .card-list {
         column-count: 1;
     }
-}
-#icons
-.icons {
-  padding: 40px;
-  height: 50px;
 }
