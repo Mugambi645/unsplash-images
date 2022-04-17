@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import SearchPhotos from './searchphotos';
 function App() {
   return (
     <div className="App">
@@ -8,6 +8,7 @@ function App() {
        <div className='title'>
          Photo search
        </div>
+       <SearchPhotos/>
      </div>
     </div>
   );
