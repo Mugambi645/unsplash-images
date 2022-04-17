@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import Unsplash, {toJson} from "unsplash-js";
+import {FaImage} from "react-icons/fa"
 const unsplash = new Unsplash({
     accessKey: process.env.REACT_APP_API_KEY,
 })
 export default function SearchPhotos(){
     const [query, setQuery] = useState(" ");
     const [pics, setPicks] = useState([]);
+    const style = { color: "white", fontSize: "4.5em" }
     console.log(query);
     const SearchPhotos = async(e) => {
         e.preventDefault();
@@ -21,7 +23,8 @@ export default function SearchPhotos(){
         <>
         <form className="form" onSubmit={SearchPhotos}>
             <label className="label" htmlFor="query">
-                {" "}
+                
+            <div className="icons"><FaImage style={style}/></div>   {" "}
             </label>
             <input type="text"
             name="query" className="input"

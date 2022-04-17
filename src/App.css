@@ -78,3 +78,8 @@
         column-count: 1;
     }
 }
+#icons
+.icons {
+  padding: 40px;
+  height: 50px;
+}
