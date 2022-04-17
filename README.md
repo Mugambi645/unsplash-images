@@ -5,8 +5,8 @@
 - React
 ## Setup requirements and Installation
 - Clone the repository by <git clone https://github.com/Mugambi645/unsplash-images>
-- Run <npm install>
-- Run <npm start>
+- Run npm install
+- Run npm start
 ## Unsplash Api
 - Go to unsplash developers page and sign up to get an Api key.
 - Create an .env file in the root directory
